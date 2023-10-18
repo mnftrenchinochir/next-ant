@@ -1,0 +1,131 @@
+@import "../../node_modules/antd/dist/reset.css";
+
+:root {
+  background-color: var(--body-background-color);
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  font-size: 14px;
+  font-family: var(--body-font);
+  line-height: 1.4;
+  background-color: var(--body-background-color);
+  min-height: 100vh;
+  max-height: max-content;
+  position: relative;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--header-font);
+  }
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
+    color: inherit;
+    outline: none;
+    font-weight: inherit;
+    text-decoration: none !important;
+  }
+  button {
+    padding: 0;
+  }
+  button,
+  button:focus,
+  button:active {
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  select,
+  input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  button,
+  input,
+  select,
+  textarea {
+    background-color: transparent; /* 1 */
+    border-style: none; /* 1 */
+    color: inherit; /* 1 */
+    font-size: 1em; /* 1 */
+    margin: 0; /* 3 */
+  }
+  button,
+  input {
+    /* 1 */
+    overflow: visible;
+  }
+  button,
+  select {
+    /* 1 */
+    text-transform: none;
+  }
+  button,
+  html [type="button"], /* 1 */
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button; /* 2 */
+  }
+  ::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  :-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  img {
+    font-size: 11px;
+  }
+}
+
+// Lottie 2 svg gargaad bgaagaas bolson
+div#lottie-wrap > svg:first-child:not(:last-child) {
+  width: 0 !important;
+  height: 0 !important;
+  content-visibility: hidden !important;
+}
+
+.lock {
+  overflow: hidden !important;
+}
+
+.layoutFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.mainContent {
+  // min-height: 80vh;
+  //background-color: var(--body-background-color);
+}
+
+.hideDesktop {
+  @media (min-width: 992px) {
+    display: none !important;
+  }
+}
+
+.hideMobile {
+  @media (max-width: 991px) {
+    display: none !important;
+  }
+}
+.fb_dialog iframe {
+  display: none !important;
+}
+
+.fb_iframe_widget iframe {
+  margin-right: 50px !important;
+  @media (max-width: 991px) {
+    margin-right: 0 !important;
+  }
+}

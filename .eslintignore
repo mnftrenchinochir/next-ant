@@ -1,0 +1,2 @@
+src/graphql.d.ts
+*.generated.tsx

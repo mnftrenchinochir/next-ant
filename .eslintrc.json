@@ -1,0 +1,105 @@
+{
+  "extends": ["next/core-web-vitals","plugin:import/recommended", "plugin:import/typescript" ],
+  "plugins": ["react", "react-hooks", "prettier", "@typescript-eslint", "import", "simple-import-sort"],
+  "rules": {
+    "react/jsx-curly-brace-presence": 2,
+    "react-hooks/exhaustive-deps": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/state-in-constructor": 0,
+    "react/destructuring-assignment": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-closing-tag-location": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-filename-extension": 0,
+    "react/jsx-no-target-blank": 0,
+    "react/jsx-uses-vars": 2,
+    "react/require-default-props": 0,
+    "react/no-array-index-key": 0,
+    "react/require-extension": 0,
+    "react/self-closing-comp": 0,
+    "react/sort-comp": 0,
+    "react/prop-types": [0],
+    "react/no-unstable-nested-components": [2, { "allowAsProps": false }],
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-wrap-multilines": ["error", { "declaration": false, "assignment": false }],
+    "react/display-name": 0,
+    "react/static-property-placement": 0,
+    "react/jsx-no-bind": 0, // Should not check test file
+    "react/no-find-dom-node": 0,
+    "react/no-unused-prop-types": 0,
+    "react/default-props-match-prop-types": 0,
+    "react/no-unused-class-component-methods": 0,
+    "template-curly-spacing": "off",
+    "no-unused-vars": "off",
+    "prettier/prettier": [
+      1,
+      {
+        "printWidth": 130,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
+    "no-shadow": "off",
+    "no-undef": "off",
+    "camelcase": 0,
+    "arrow-body-style": [2, "as-needed"],
+    "comma-dangle": [2, "always-multiline"],
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": ["TemplateLiteral"]
+      }
+    ],
+    "max-len": 0,
+    "newline-per-chained-call": 0,
+    "no-confusing-arrow": 0,
+    "no-param-reassign": 0,
+    "no-console": [1, { "allow": ["warn", "error"] }],
+    "no-use-before-define": 0,
+    "no-underscore-dangle": 0,
+    "prefer-template": 2,
+    "require-yield": 0,
+
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": 2,
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/no-shadow": [2, { "ignoreTypeValueShadow": true }],
+
+    "@next/next/no-img-element": 0,
+
+    "import/extensions": 0,
+    "import/no-cycle": 0,
+    "simple-import-sort/exports": "error",
+    "import/no-duplicates": ["error", { "considerQueryString": true }],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        // React first grouping
+        "groups": [
+          // React first
+          ["^react", "^@?\\w"],
+          // Side effect imports.
+          ["^\\u0000"],
+          // Packages.
+          // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
+          ["^@?\\w"],
+          // Absolute imports and other imports such as Vue-style `@/foo`.
+          // Anything not matched in another group.
+          ["^"],
+          // Relative imports.
+          // Anything that starts with a dot.
+          ["^\\."]
+        ]
+      }
+    ]
+  }
+}

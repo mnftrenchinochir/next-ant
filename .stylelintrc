@@ -1,0 +1,21 @@
+{
+  "customSyntax": "postcss-scss",
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "block-no-empty": null,
+    "max-nesting-depth": 10,
+    "max-empty-lines": 1,
+    "no-descending-specificity": null,
+    "declaration-colon-newline-after": null,
+    "font-family-name-quotes": null,
+    "value-list-comma-newline-after": null,
+    "selector-pseudo-class-no-unknown": null,
+    "string-quotes": "double",
+    "function-url-quotes": "always",
+    "color-hex-length": "short",
+    "declaration-property-unit-allowed-list": "string",
+    "import-notation": "string|url",
+    "indentation": 2,
+    "rule-empty-line-before": 0
+  }
+}
