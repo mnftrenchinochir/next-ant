@@ -5,7 +5,7 @@ const { DuplicateReporterPlugin } = require('duplicate-dependencies-webpack-plug
 const ANALYZE = process.env.ANALYZE;
 
 const nextConfig = {
-  distDir: '.next/default',
+  distDir: '.next',
   modularizeImports: {
     lodash: {
       transform: 'lodash/{{member}}',
